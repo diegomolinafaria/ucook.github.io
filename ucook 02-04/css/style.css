@@ -1,0 +1,402 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+  src:url('../fonts/OpenSans-Light.ttf');
+  font-family: "Open Sans";
+}
+
+@font-face{
+src:url('../fonts/OpenSans-Bold.ttf');
+font-family: "OpenSans-Bold";
+}
+.clear{
+	clear: both;
+}
+
+/*Navbar*/
+.logo{
+background: url('../images/logo-ucook.png');
+width: 50px;
+height: 50px;
+margin-left: 50px;
+margin-top: 10px;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.menu-desktop a{
+  font-family: 'OpenSans-Bold';
+  padding: 0 30px 0 30px;
+
+}
+/*---*/
+
+/*Sidenav*/
+
+.mobile-icon{
+  padding-top: 20px;
+  color: #2e7d32;
+}
+.mobile-icon i{
+  color: #2e7d32;
+}
+
+.logo-sidenav{
+background: url('../images/logo-ucook.png');
+width: 80px;
+height: 80px;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0 auto;
+
+}
+.sidenav-text li a{
+  font-family: 'OpenSans-Bold';
+}
+
+/*Sidenav Redes sociais*/
+.menu-social a{
+ display: inline-block;
+ padding:0 20px 0 20px;
+}
+
+.menu-social i{
+  font-size: 16px;
+  padding-top: 10px;
+  opacity: 0.7;
+}
+
+.line{
+  width: 50%;
+  margin: 0 auto;
+  height: 1px;
+  background: green;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  opacity: 0.5;
+}
+/*---*/
+
+/*Banner-Parallax*/
+div.banner{
+  padding: 0;
+  width: 100%;
+  max-height: 500px;
+  display: block;
+  
+}
+
+div.banner-bg{
+  background: url('../images/fruits.jpg');
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+.overlay-parallax{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(20,20,20,0.7);
+  top: 0;
+  left: 0;
+}
+
+ div.banner-bg > .texto{
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  color: white;
+  padding-top: 50px;
+  font-size: 25px;
+  font-family: "OpenSans-Bold"
+}
+div.banner-bg > .texto h2{
+  font-size: 80px;
+  }
+
+div.container{
+  float: center;
+}
+div.texto h2{
+font-size: 10px;
+text-transform: uppercase;
+}
+div.container span{
+  color:#f9a825;
+  font-family: "OpenSans-Bold";
+}
+div.texto p{
+  text-transform: uppercase;
+}
+
+.arrow{
+  position: relative;
+  top:25px;
+}
+/*---*/
+
+
+/*Box-services*/
+section.box1{
+  width: 100%;
+  min-height: 390px;
+  padding: 50px 0 20px 0;
+}
+
+.box1 h2{
+  display: inline-block;
+  color: white;
+  padding: 40px 0 40px 0;
+}
+
+.img-single img{
+  width: 120px;
+  height: 120px;
+}
+
+.text-container-single h2{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  font-size: 25px;
+}
+
+/*Box-ebook*/
+section.box2{
+  width: 100%;
+  min-height: 390px;
+  padding: 50px 0 20px 0;
+}
+
+.retencao{
+  position: relative;
+  top: 35px;
+  width: 60%;
+  max-width: 200px;
+  border: 1px solid white
+  padding: 10px 0 10px 0;
+}
+
+.ebook{
+background: url('../images/ebook-ucook.png');
+width: 400px;
+height: 300px;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+/*---*/
+
+/*Box about*/
+section.box3{
+  width: 100%;
+  min-height: 390px;
+}
+
+.sobre{
+ height: 390px;
+}
+
+.depoimentos{
+ height: 390px;
+}
+
+footer{
+  width: 100%;
+  height: 40px;
+}
+/*Effects*/
+
+/* Grow Shadow */
+.hvr-grow-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.hvr-grow-shadow:hover, .hvr-grow-shadow:focus, .hvr-grow-shadow:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Skew Forward */
+.hvr-skew-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+
+/* Wobble Skew */
+@-webkit-keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+@keyframes hvr-wobble-skew {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+.hvr-wobble-skew {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+  -webkit-animation-name: hvr-wobble-skew;
+  animation-name: hvr-wobble-skew;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Skew Backward */
+.hvr-skew-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-skew-backward:hover, .hvr-skew-backward:focus, .hvr-skew-backward:active {
+  -webkit-transform: skew(10deg);
+  transform: skew(10deg);
+}
+
+/* Grow Rotate */
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px ){
+  .card{
+  left: 50%;
+  transform: translateX(-25%);
+  -ms-transform: translateX(-50%);
+  }
+  div.banner-bg > .texto h2{
+  font-size: 50px;
+  }
+
+   div.banner-bg > .texto p{
+  font-size: 20px;
+  display: block;
+  }
+/*Centralizando icones box1 box-images*/
+  .box-images{
+  transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  }
+
+/*Centralizando ebook box2*/
+.ebook{
+  transform: translateX(-3%);
+  -ms-transform: translateX(-3%);
+}
+
+}
+
+@media screen and (max-width: 480px ){
+
+}
