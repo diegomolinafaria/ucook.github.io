@@ -1,1 +1,1 @@
-# uCook
+http://ucook.github.io
