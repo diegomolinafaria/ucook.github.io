@@ -2,11 +2,12 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-  font-family: "Open Sans";
+  font-family: 'Roboto', sans-serif;
 }
 
 html,body{
 	height: 100%;
+  height: 100%;
 }
 
 @font-face{
@@ -103,7 +104,7 @@ margin: 0 auto;
 div.banner{
   padding: 0;
   width: 100%;
-  max-height: 500px;
+  height: 100vh;
   display: block;
   
 }
@@ -112,7 +113,7 @@ div.banner-bg{
   background: url('../images/fruits.jpg');
   position: relative;
   width: 100%;
-  max-height: 500px;
+  height: 100vh;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -157,59 +158,155 @@ div.texto p{
 
 .arrow{
   position: relative;
-  top:25px;
+  bottom: 0px;
 }
 /*---*/
 
 
 /*Box-services*/
 section.box1{
-  width: 100%;
-  min-height: 360px;
-  padding: 50px 0 20px 0;
+  transform: skewY(-4deg);
+  z-index:3;
+  position: relative;
+  margin-top: -10vh;
+  background-color: #EFF0F2;
 }
-
-.box1 h2{
+div.box1-title{
+min-height: 55vh;
+transform: skewY(4deg);
+}
+div.title-left h2, .title-right h2{
   display: inline-block;
-  color: white;
-  padding: 40px 0 40px 0;
+  width: 250px;
+  color: #ff775f;
+  font-size: 23px;
+  font-weight: bold;
+}
+div.title-left h2{
+  padding-top: 50px;
 }
 
-.img-single img{
-  width: 120px;
-  height: 120px;
+/*Box1-Texts*/
+  div.text-left span{
+    display: inline-block;
+    width: 380px;
+    color: #707B81;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 16px;
+  }
+    div.text-left span:first-child{
+    margin-top: 30px;
+  }
+  div .text-right span{
+    display: inline-block;
+    width: 380px;
+    color: #707B81;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 16px;
+  }
+  div.text-right span:first-child{
+    margin-top: 30px;
+  }
+
+@media only screen and (max-width: 1441px) {
+  div.title-right h2{
+    margin-bottom: 60px;
+  }
 }
 
-.text-container-single h2{
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  font-size: 25px;
+@media only screen and (max-width: 1025px) {
+
+  div.text-left span, div.text-right span{
+    font-size: 14px;
+    width: 330px;
+  }
 }
 
-/*Box-ebook*/
+@media only screen and (max-width: 900px) {
+  div.title-right h2{
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  div.title-left h2, .title-right h2{
+   font-size: 20px;
+  }
+  div.text-left span, div.text-right span{
+   display: flex;
+   align-self: center;
+   margin: 0 auto;
+  }
+
+  div.title-center span{
+    margin-top: 60px;
+  }
+  div.title-right h2{
+     margin-top: 80px; 
+  }
+}
+
+
+/*Box-Serviços*/
 section.box2{
   width: 100%;
-  min-height: 360px;
-  padding: 50px 0 20px 0;
-}
-
-.btn-retencao{
+  min-height: 70vh;
+  transform: skewY(-4deg);
+  z-index:3;
+  margin-top: -5vh;
   position: relative;
-  top: 35px;
-  width: 60%;
-  max-width: 200px;
-  border: 1px solid white
-  padding: 10px 0 10px 0;
+  background-image: linear-gradient(to bottom, #d9483b, #8c4637);
 }
 
-.ebook{
-background: url('../images/ebook-ucook.png');
-width: 400px;
-height: 300px;
+.smartphone{
+background: url('../images/iphone.png');
+width: 350px;
+height: 500px;
+transform: skewY(4deg);
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
+margin-top: -5vh;
+
+}
+.playstore img{
+  width: 180px;
+  height: 50px;
+  transform: skewY(4deg);
+  float: left;
+  margin-top: -13px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.appstore img{
+  width: 180px;
+  height: 50px;
+  transform: skewY(4deg); 
+  float: left;
+  cursor: pointer;
+}
+
+div.services{
+  transform: skewY(4deg);
+  margin-top: 40px;
+}
+
+.card{
+  border-radius: 10px;
+  width: 200px;
+  height: 250px;
+  background-image: linear-gradient(to bottom, #c0c0c0, #f0f0f0);
+}
+
+.card-content span{
+  font-size: 16px;
+}
+
+div.services-single{
+  margin: 20px;
+  background-color: white;
 }
 /*---*/
 
@@ -223,6 +320,9 @@ background-size: cover;
 background-position: bottom;
 background-attachment: fixed;
 font-weight: bold;
+transform: skewY(-4deg);
+margin-top: -5vh;
+z-index: 4;
 
 }
 
@@ -303,40 +403,81 @@ margin-right: 10px;
 
 /*---*/
 
-/*FAQ*/
+/*BOX4*/
 
 section.box4{
-background: url('../images/FAQ/bg-faq.png');
-width: 100%;
-min-height: 500px;
-background-size: cover;
+  width: 100%;
+  min-height: 60vh;
+  transform: skewY(-4deg);
+  z-index:5;
+  margin-top: -5vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, #e8a0ab, #8c4637);
 }
 
-.post-it-single{
-background: url('../images/FAQ/post-it.png');
-background-repeat: no-repeat;
-background-size: contain;
-height: 350px;
-width: 300px;
-align-items: center;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+div.title-box4{
+   transform: skewY(4deg);
+   color: white;
+   font-size: 60px;
+
 }
 
-.text-post-it-single{
-  width: 250px;
+#text1 h2{
+  color: #2E7D32;
+}
+#text2 h2{
+  color: #f9a825;
+}
+#text3 h2{
+  color: #C62828;
+}
+#text4 h2{
+  color: #f9a825;
+}
+#text5 h2{
+  color: #C62828;
+}
+#text6 h2{
+  color: #2E7D32;
+}
+#text7 h2{
+  color: #C62828;
+}
+#text8 h2{
+  color: #2E7D32;
+}
+#text9 h2{
+  color: #f9a825;
 }
 
-.text-post-it-single h2{
-  font-size: 20px;
-  font-weight: bold;
+
+
+
+
+#vslidernav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
 }
 
+#vslider {
+    width: 1000px;
+    transform: skewY(4deg);
+}
 
-
-
+#vsliderboxes {
+    position : relative;
+    overflow : hidden;
+}
+#vsliderboxes div {
+    height: 250px;
+    width: 900px;
+}
+#vsliderboxs-inner {
+    position : relative;
+    width    : 900px;
+    height   : 250px;
+}}
 
 footer{
   width: 100%;
@@ -518,6 +659,63 @@ footer{
 
 }
 
-@media screen and (max-width: 480px ){
+/*Responsive*/
+@media only screen and (max-width: 1441px) {
+  div.smartphone{
+    height: 400px;
+    margin-top: -5vh;
+  }
 
+   div.title-right h2{
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+
+div.playstore img{
+  width: 120px;
+  height: 36px;
+  margin-left: 65px;
+ 
+}
+div.appstore img{
+  width: 120px;
+  height: 36px;
+  margin-top: -4px;
+}
+  
+}
+@media only screen and (max-width: 900px) {
+  div.title-right h2{
+    margin-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  div.title-left h2, .title-center h2, .title-right h2{
+   font-size: 20px;
+  }
+  div.title-center h2{
+    margin-top: 60px;
+  }
+  div.title-right h2{
+     margin-top: 80px; 
+  }
+  div.smartphone{
+   height: 300px;
+   margin-top: -5vh;
+   margin-left: auto;
+   margin-right: auto;
+  }
+  div.playstore img, div .appstore img{
+  width: 80px;
+  height: 26px;
+}
+  div.playstore img{
+    margin-left: 140px;
+  }
+  div.appstore img{
+  margin-top: -7px;  
+  }
+  
 }
