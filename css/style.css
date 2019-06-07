@@ -290,23 +290,35 @@ margin-top: -5vh;
 
 div.services{
   transform: skewY(4deg);
-  margin-top: 40px;
+  margin-top: 100px;
 }
 
 .card{
-  border-radius: 10px;
+  border-radius: 20px;
   width: 200px;
-  height: 250px;
+  height: 180px;
   background-image: linear-gradient(to bottom, #c0c0c0, #f0f0f0);
 }
 
-.card-content span{
+.card-style h2{
   font-size: 16px;
+  color: #d9483b;
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
-
-div.services-single{
-  margin: 20px;
-  background-color: white;
+.card-style i{
+  color: #d9483b;
+  padding-bottom: 10px;
+}
+.card-style p{
+  text-align: center;
+  color: #8c4637;
+  padding: 0 3px 0 3px;
+  padding-top: 5px;
+}
+.divider{
+  background-color: #d9483b;
 }
 /*---*/
 
@@ -412,14 +424,33 @@ section.box4{
   z-index:5;
   margin-top: -5vh;
   position: relative;
-  background-image: linear-gradient(to bottom, #e8a0ab, #8c4637);
+  background-image: url('../images/box4/bg-box4.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay-box4{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(to bottom, #9c27b0, #e51919);
+  opacity: 0.6;
+  /*background-color: rgba(255,255,255,0.6);*/
+  top: 0;
+  left: 0;
 }
 
 div.title-box4{
    transform: skewY(4deg);
    color: white;
    font-size: 60px;
+   font-weight: bold; 
+}
 
+div.title-box4 h2:first-child{
+  padding-top:50px;
 }
 
 #text1 h2{
@@ -461,17 +492,22 @@ div.title-box4{
 }
 
 #vslider {
-    width: 1000px;
-    transform: skewY(4deg);
+    width: 300px;
 }
 
 #vsliderboxes {
     position : relative;
     overflow : hidden;
+    padding-left: 160px;
+   
+}
+#vsliderboxes h2{
+  transform: skewY(4deg);
 }
 #vsliderboxes div {
-    height: 250px;
-    width: 900px;
+    height: 350px;
+    width: 300px;
+    margin-top: 195px;
 }
 #vsliderboxs-inner {
     position : relative;
@@ -661,6 +697,8 @@ footer{
 
 /*Responsive*/
 @media only screen and (max-width: 1441px) {
+  
+  /*box2*/
   div.smartphone{
     height: 400px;
     margin-top: -5vh;
@@ -669,9 +707,14 @@ footer{
    div.title-right h2{
     margin-top: 80px;
   }
+
+  div.services{
+   margin-top: 60px; 
+  }
 }
 @media only screen and (max-width: 1025px) {
 
+/*box2*/
 div.playstore img{
   width: 120px;
   height: 36px;
@@ -682,6 +725,19 @@ div.appstore img{
   width: 120px;
   height: 36px;
   margin-top: -4px;
+}
+
+section.box2 .container{
+ width: 1024px;
+}
+div.smartphone{
+    height: 500px;
+    margin-top: -5vh;
+  }
+
+div.services{
+ margin-right: 10px; 
+ margin-bottom: 40px;
 }
   
 }
@@ -701,6 +757,10 @@ div.appstore img{
   div.title-right h2{
      margin-top: 80px; 
   }
+  section.box2 .container{
+    width: 300px;
+  }
+
   div.smartphone{
    height: 300px;
    margin-top: -5vh;
