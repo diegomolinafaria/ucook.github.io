@@ -110,59 +110,51 @@ div.banner{
 }
 
 div.banner-bg{
-  background: url('../images/fruits.jpg');
+  background: url('../images/banner/bg-banner.jpg');
   position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .overlay-parallax{
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 1;
-  background-color: rgba(20,20,20,0.7);
+  background-color: rgba(10,10,10,0.7);
   top: 0;
   left: 0;
 }
-
  div.banner-bg > .texto{
-  position: relative;
   z-index: 2;
-  margin: 0 auto;
   color: white;
-  padding-top: 50px;
-  font-size: 25px;
-  font-family: "OpenSans-Bold";
 }
-div.banner-bg > .texto h2{
+div.banner-bg > .texto span{
   font-size: 80px;
   }
-
 div.container{
   float: center;
 }
 div.texto h2{
-font-size: 10px;
+font-size: 80px;
 text-transform: uppercase;
 }
-div.container span{
-  color:#f9a825;
-  font-family: "OpenSans-Bold";
-}
 div.texto p{
-  text-transform: uppercase;
+  color:#f9a825;
+  font-size: 60px;
 }
 
 .arrow{
-  position: relative;
-  bottom: 0px;
+  margin: 0 auto;
 }
 /*---*/
 
-
+/*
 /*Box-services*/
 section.box1{
   transform: skewY(-4deg);
@@ -249,7 +241,7 @@ div.title-left h2{
 }
 
 
-/*Box-Serviços*/
+/*BOX2*/
 section.box2{
   width: 100%;
   min-height: 70vh;
@@ -257,7 +249,8 @@ section.box2{
   z-index:3;
   margin-top: -5vh;
   position: relative;
-  background-image: linear-gradient(to bottom, #d9483b, #8c4637);
+  background-image: linear-gradient(to bottom, #e51919, #f9a825);
+
 }
 
 .smartphone{
@@ -271,22 +264,24 @@ background-repeat: no-repeat;
 margin-top: -5vh;
 
 }
-.playstore img{
-  width: 180px;
-  height: 50px;
+.apps{
+  display: flex;
+}
+.playstore img, .appstore img{
+  width: 150px;
+  height: 40px;
   transform: skewY(4deg);
-  float: left;
-  margin-top: -13px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-.appstore img{
-  width: 180px;
-  height: 50px;
-  transform: skewY(4deg); 
-  float: left;
   cursor: pointer;
 }
+
+.playstore{
+  padding-left: 20px;
+}
+.appstore{
+  padding-top: 11px;
+  padding-left: 10px;
+}
+
 
 div.services{
   transform: skewY(4deg);
@@ -322,135 +317,46 @@ div.services{
 }
 /*---*/
 
-/*Sobre*/
+/*BOX3*/
 section.box3{
-background: url('../images/bg-about.jpg');
-position: relative;
-width: 100%;
-min-height: 500px;
-background-size: cover;
-background-position: bottom;
-background-attachment: fixed;
-font-weight: bold;
-transform: skewY(-4deg);
-margin-top: -5vh;
-z-index: 4;
-
-}
-
-.overlay-about{
   width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  background-color: rgba(255,255,255,0.6);
-  top: 0;
-  left: 0;
-}
-
-section.box3 h2{
-  padding-top: 20px;
-}
-
-.sobrepor{
-  position: relative;
-  z-index: 2;
-}
-
-h2.sobrepor span{
-  color:#c62828;
-  font-family: "Oregano";
-  font-size:70px;
-}
-
-
-
-.sobre p{
- 
-  width: 360px;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-size: 25px;
-  text-align: left;
-
-
-
-}
-/*---*/
-
-/*Depoimento*/
-
-.depoimento{
-  width: 320px;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-size: 14px;
-  text-align: right;
-}
-
-.depoimento i{
-  padding: 0 5px 0 5px;
-  color: #c62828;
-}
-
-div.alinhar-foto{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center
-}
-
-div.foto-depoimento{
-
-background: url('../images/ceo-ucook.jpeg');  
-width: 150px;
-height: 150px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border: 2px solid white;
-margin-right: 10px;
-}
-
-
-/*---*/
-
-/*BOX4*/
-
-section.box4{
-  width: 100%;
-  min-height: 60vh;
+  min-height: 70vh;
   transform: skewY(-4deg);
   z-index:5;
   margin-top: -5vh;
   position: relative;
-  background-image: url('../images/box4/bg-box4.png');
-  background-size: contain;
+  background-image: url('../images/box3/bg-box3.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.overlay-box4{
+.overlay-box3{
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: 1;
-  background: linear-gradient(to bottom, #9c27b0, #e51919);
-  opacity: 0.6;
-  /*background-color: rgba(255,255,255,0.6);*/
+  background-image: linear-gradient(to bottom, #f9a825, #e51919);
+  opacity: 0.5;
   top: 0;
   left: 0;
 }
 
-div.title-box4{
+div.title-box3{
+  z-index: ;
    transform: skewY(4deg);
    color: white;
    font-size: 60px;
    font-weight: bold; 
 }
 
-div.title-box4 h2:first-child{
+div.title-box3 h2:first-child{
   padding-top:50px;
+}
+
+.sobrepor{
+  position: relative;
+  z-index: 2;
 }
 
 #text1 h2{
@@ -481,10 +387,6 @@ div.title-box4 h2:first-child{
   color: #f9a825;
 }
 
-
-
-
-
 #vslidernav ul {
     list-style: none;
     padding: 0;
@@ -514,6 +416,109 @@ div.title-box4 h2:first-child{
     width    : 900px;
     height   : 250px;
 }}
+
+/*BOX4*/
+
+section.box4{
+background: url('../images/bg-about.jpg');
+position: relative;
+width: 100%;
+min-height: 500px;
+background-size: cover;
+background-position: bottom;
+background-attachment: fixed;
+font-weight: bold;
+transform: skewY(4deg);
+margin-top: -5vh;
+z-index: 4;
+
+}
+.overlay-about{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.6);
+  top: 0;
+  left: 0;
+}
+section.box4 h2{
+  padding-top: 20px;
+}
+
+h2.sobrepor span{
+  color:#c62828;
+  font-family: "Oregano";
+  font-size:70px;
+}
+
+.sobre p{
+ 
+  width: 360px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: left;
+}
+/*---*/
+section.box4{
+  background-color: #ffffff;
+}
+/*About-jeremias*/
+div.about-jeremias h2, div.about-juliana h2{
+  font-size: 30px;
+  color: #e51919;
+}
+div.about-jeremias span, div.about-juliana span{
+  font-size: 24px;
+}
+
+div.about-juliana{
+  text-align: right;
+}
+
+div.about-juliana p span{
+  font-family: "Oregano";
+  color: black;
+  font-size: 18px;
+}
+
+div.juliana-mobile{
+display: none;
+}
+
+/*Depoimento*/
+
+.depoimento{
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: right;
+}
+.depoimento i{
+  padding: 0 5px 0 5px;
+  color: #c62828;
+}
+div.alinhar-foto{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center
+}
+
+div.foto-depoimento{
+background: url('../images/ceo-ucook.jpeg');  
+width: 150px;
+height: 150px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border: 2px solid white;
+margin-right: 10px;
+}
+/*---*/
+
+
 
 footer{
   width: 100%;
@@ -687,26 +692,32 @@ footer{
   -ms-transform: translateX(10%);
   }
 
-/*Centralizando ebook box2*/
-.ebook{
-  transform: translateX(-3%);
-  -ms-transform: translateX(-3%);
-}
+
 
 }
 
 /*Responsive*/
 @media only screen and (max-width: 1441px) {
   
+  /*box1*/
+
+    div.title-right h2{
+    margin-top: 80px;
+  }
+
   /*box2*/
   div.smartphone{
     height: 400px;
     margin-top: -5vh;
   }
 
-   div.title-right h2{
-    margin-top: 80px;
-  }
+div.playstore{
+  padding-left: 20px;
+}
+div.appstore{
+  padding-top: 11px;
+  padding-left: 10px;
+}
 
   div.services{
    margin-top: 60px; 
@@ -715,16 +726,9 @@ footer{
 @media only screen and (max-width: 1025px) {
 
 /*box2*/
-div.playstore img{
+div.playstore img, div.appstore img {
   width: 120px;
-  height: 36px;
-  margin-left: 65px;
- 
-}
-div.appstore img{
-  width: 120px;
-  height: 36px;
-  margin-top: -4px;
+  height: 36px; 
 }
 
 section.box2 .container{
@@ -733,8 +737,17 @@ section.box2 .container{
 div.smartphone{
     height: 500px;
     margin-top: -5vh;
+    margin-left: 350px;
+    width: 300px;
   }
 
+div.playstore{
+  padding-left: 380px;
+}
+
+div.appstore{
+  padding-top: 9px;
+}
 div.services{
  margin-right: 10px; 
  margin-bottom: 40px;
@@ -748,34 +761,57 @@ div.services{
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  div.title-left h2, .title-center h2, .title-right h2{
+  
+  /*box1*/
+  div.title-left h2, .title-right h2{
    font-size: 20px;
-  }
-  div.title-center h2{
-    margin-top: 60px;
   }
   div.title-right h2{
      margin-top: 80px; 
   }
+  /*box2*/
   section.box2 .container{
     width: 300px;
   }
-
   div.smartphone{
-   height: 300px;
+   height: 400px;
    margin-top: -5vh;
    margin-left: auto;
    margin-right: auto;
   }
   div.playstore img, div .appstore img{
-  width: 80px;
-  height: 26px;
-}
-  div.playstore img{
-    margin-left: 140px;
+    width: 80px;
+   height: 26px;
   }
-  div.appstore img{
-  margin-top: -7px;  
+  div.playstore{
+   padding-left: 70px;
   }
-  
+  div.appstore{
+    padding-top: 6px;
+  }
+ 
+ /*box3*/
+
+ div.title-box3{
+  margin-top: 11px;
+  margin-right: 8px;
+ }
+
+ #vsliderboxes div{
+
+font-size: 10px;
+ }
+
+ /*box4*/
+
+ div.about-jeremias, div.about-juliana{
+  text-align: center;
+  margin: 0 10%;
+ }
+ div.juliana-mobile{
+  display: block;
+ }
+ div.juliana-desktop{
+  display: none;
+ }
 }
