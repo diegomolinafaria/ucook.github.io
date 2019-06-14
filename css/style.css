@@ -486,44 +486,135 @@ div.juliana-mobile{
 display: none;
 }
 
-/*Depoimento*/
 
-.depoimento{
-  width: 320px;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-size: 14px;
-  text-align: right;
-}
-.depoimento i{
-  padding: 0 5px 0 5px;
-  color: #c62828;
-}
-div.alinhar-foto{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center
-}
+/*Footer*/
 
-div.foto-depoimento{
-background: url('../images/ceo-ucook.jpeg');  
-width: 150px;
-height: 150px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border: 2px solid white;
-margin-right: 10px;
-}
-/*---*/
-
-
+/*Menu-social Footer*/
 
 footer{
   width: 100%;
-  height: 40px;
 }
+.footer-menu-social{
+  width: 100%;
+  font-size: 20px;
+} 
+
+.footer-menu-social li{
+  display: inline-block;
+  padding:0 20px 0 20px;  
+}
+
+.footer-menu-social a{
+  color: white;
+}
+.footer-menu-social i{
+  opacity: 0.7;
+}
+
+/*Newsletter*/
+
+footer{
+  background-color: #c62828;
+}
+
+footer.row{
+  padding: 0;
+  margin: 0;
+}
+
+form.newsletter{
+text-align: center;
+width: 100%;
+background-color: rgba(100,100,100,0.8);
+z-index: 2;
+}
+
+.newsletter h2{
+  font-size: 25px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.form{
+ width: 350px;
+ margin: 0 auto;
+ display: flex;
+  padding:0;
+}
+
+.form i{
+  margin-top: 15px;
+  margin-left: -30px;
+  padding-right: 10px;
+  padding-left: 30px;
+  color: white;
+}
+
+.form label{
+  margin-left: 10px;
+  padding-left: 30px;
+}
+
+footer div.copyright{
+  background-color: #c62828;
+}
+footer p{
+  text-align: center;
+  color: white;
+}
+
+input[type="text"], input[type="email"] {
+  border-bottom: none!important;
+  box-shadow: none!important;
+}
+.form-group{
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #ff5f52;
+  opacity: 1;
+  color: black;
+  margin: 0 10px;
+  text-align: left;
+}
+
+.form-group:focus{
+  border:2px solid white;
+
+}
+.footer-btn{
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  border:0;
+}
+
+.footer-btn:hover{
+  opacity: 0.7;
+  background-color: white;
+  color: black;
+}
+.footer-btn:active{
+border:2px solid white;
+}
+.footer-line{
+  width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  background: white;
+  margin-bottom: 12px;
+  margin-top: 25px;
+  opacity: 0.5;
+}
+footer span{
+  font-family: "Oregano";
+  font-size: 20px;
+  color: white;
+}
+
 /*Effects*/
 
 /* Grow Shadow */
@@ -753,6 +844,10 @@ div.services{
  margin-bottom: 40px;
 }
   
+ /*Box4*/
+ section.box4 .container{
+ width: 900px;
+} 
 }
 @media only screen and (max-width: 900px) {
   div.title-right h2{
@@ -794,15 +889,18 @@ div.services{
 
  div.title-box3{
   margin-top: 11px;
-  margin-right: 8px;
  }
 
- #vsliderboxes div{
+ #vsliderboxs-inner h2{
 
-font-size: 10px;
+font-size: 50px;
  }
 
  /*box4*/
+  /*Box4*/
+ section.box4 .container{
+ width: 400px;
+} 
 
  div.about-jeremias, div.about-juliana{
   text-align: center;
@@ -814,4 +912,6 @@ font-size: 10px;
  div.juliana-desktop{
   display: none;
  }
+
 }
+

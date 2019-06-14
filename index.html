@@ -223,10 +223,10 @@
 			            <div id="text1" class="active"><h2>Glicêmico</h2></div>
 			            <div id="text2" class="inactive"><h2>Nutricional</h2></div>
 			            <div id="text3" class="inactive"><h2>Financeiro</h2></div>
-			            <div id="text4" class="active"><h2>Glicêmico</h2></div>
+			            <div id="text4" class="inactive"><h2>Glicêmico</h2></div>
 			            <div id="text5" class="inactive"><h2>Nutricional</h2></div>
 			            <div id="text6" class="inactive"><h2>Financeiro</h2></div>
-			            <div id="text7" class="active"><h2>Glicêmico</h2></div>
+			            <div id="text7" class="inactive"><h2>Glicêmico</h2></div>
 			            <div id="text8" class="inactive"><h2>Nutricional</h2></div>
 			            <div id="text9" class="inactive"><h2>Financeiro</h2></div>
 			        </div>
@@ -252,7 +252,7 @@
         		<div class="about-juliana">
         			<div class="col s12 m8 juliana-desktop ">
         			<h2 class="">Juliana Ferracioli</h2>
-        			<span>Engenheira e DM1</span>
+        			<span>Técnica em química e DM1</span>
         			<p>Influencer em diabetes, foi diagnosticada com diabetes aos 17 anos.</p>
         			<p>Desenvolve receitas inclusivas e adiministra seu tempo com a <span>uCook</span> </p>
         			</div>
@@ -260,56 +260,55 @@
         			<div class="col s12 juliana-mobile">
         			<h2 class="">Juliana Ferracioli</h2>
         			<span>Engenheira e DM1</span>
-        			<p>Influencer em diabetes, foi diagnosticada com diabetes aos 17 anos.</p>
+        			<p>Influencer em diabetes, foi diagnosticada com diabetes aos 18 anos.</p>
         			<p>Desenvolve receitas inclusivas e adiministra seu tempo com a <span>uCook</span> </p>
         			</div>
         		</div>
-				<!--<div class="col s12 m6 l6 sobre sobrepor">
-			      	<p>Somos uma plataforma inteligente de gerenciamento de ingredientes. Otimizando o seu tempo e diminuindo o desperdício de alimentos.
-			      		Não sabe o que fazer com o que tem em casa? Fale com a gente!</p></p>
-			      	<div class="btn red darken-3 hvr-grow-shadow btn-about">
-		    			<a href="" target="_blank" class="white-text"><i class="mode_edit"> <b>Cadastre-se!</b></i></a>
-	  				</div>
-
-			      				
-			     </div>
-			     <div class="col s12 m6 l6 sobrepor" >
-			      		<p class="depoimento justify-align">
-			      			<i class="fas fa-quote-left fa-2x"></i>
-				      			Em 2015 descobri que tinha diabetes tipo 1.
-				      			A partir dali minha vida mudou,	
-				      			literalmente, do dia pra noite. Entender os benefícios
-				      			de uma alimentação balanceada é essencialpara conviver
-				      			com a doença.Hoje, a diabetes é meu propósito de vida e
-				      			não minha sentença.Apelidei esse propósito de uCook.
-				      		<i class="fas fa-quote-right fa-2x"></i>
-				      	</p>
-
-				      <div class="alinhar-foto">
-				      		<div class="foto-depoimento circle sobrepor "></div>	
-				      		<p>Juliana Ferracioli
-				      		<br>dm1 desde 2015 e CEO da uCook</p>
-				      </div>-->
-			     </div><!--depoimento-->
 		    </div><!--row-->
 		</div><!--container-->		
-    </section><!--box3-->
+    </section><!--box4-->
 
 
 
-    <!--Modal-->
-
-    <div>
-    	<span id="teste1"></span><span id="teste2"></span>
-    </div>
-
-
-    <footer>
-    	<p>Todos os direitos reservados</p>
-    </footer>
-
-
-
+    
+<footer id="footer">
+	<div class="container center">
+		<h3>Inscreva-se para nosso beta!</h3>
+		<form class="mc-trial row" id="contact">
+			<div class="form-group col s12 m3 offset-m2">
+				<div class="controls">
+					<input name="name" placeholder="Nome completo*" required="" class="form-control" target=required type="text">
+				</div>
+			</div>
+			<div class="form-group col s12 m3 ">
+				<div class="controls"></div>
+				<input name="email" placeholder="E-mail*" required="" class="form-control" type="email">
+			</div>
+			<div class="form-froup col s12 m2">
+					<button name="Enviar" type="submit" class="footer-btn" id="submit-btn">Enviar <i class="fa fa-arrow-right"></i></button>	
+			</div>
+			<div id="msg" class="msg"></div>
+		</form>
+		<div>
+			<p>
+				<h4><a href=""></a>Blog</h4>
+			</p>
+		</div>
+		<ul class="footer-menu-social">
+			<li><a href="https://www.facebook.com/ucookbr/" target="_blank"><i class="fab fa-facebook hvr-grow-rotate"></i></a></li>
+			<li><a href="https://www.instagram.com/ucookbr/" target="_blank"><i class="fab fa-instagram hvr-grow-rotate"></i></a></li>
+			<li><a href="https://twitter.com/uCookBR" target="_blank"><i class="fab fa-twitter hvr-grow-rotate"></i></a></li>
+			<li><a href="https://www.linkedin.com/company/ucookbr/" target="_blank"><i class="fab fa-linkedin hvr-grow-rotate"></i></a></li>
+		</ul>
+		</div>
+		<div class="footer-line"></div>
+		<div class="copyright">
+            <div class="container center">
+           <p><i class="far fa-copyright"></i>
+	    	<span> uCook</span> - 2019. Todos os direitos reservados - Powered by <a href="https://www.diegomolina.com.br" target="_blank">Molina</a><p>
+            </div>	
+         </div><!--copyright-->
+  </footer>
 
    <script src="js/jquery.js"></script>
    <script src="js/materialize.min.js"></script>
@@ -364,6 +363,47 @@
     
 });
   </script>
+
+<script>
+    /* global $ */
+    $(document).ready(function(){
+      $('#submit-btn').click(function(event){
+        event.preventDefault();
+         $.ajax({
+            datatype: "JSON",
+            url: 'sendmail.php',
+            type: 'POST',
+            data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+              $('#submit-btn').html('Enviando...');
+            },
+            success: function(response){
+              if(response){
+                console.log(response);
+                if(response['signal'] == 'ok'){
+                 $('#msg').html('<div class="alert alert-success">'+ response[msg] +'</div>');          
+                }
+                else{
+                  $('#msg').html('<div class="alert alert-danger">'+ response['msg'] +'</div>');
+                }
+              }
+            },
+            error: function(){
+              $('#msg').html('Erro, Tente novamente.');
+            },
+            complete: function(){
+              $('#submit-btn').html('Enviar <i class="fa fa-arrow-right">');
+              $('#msg').html('Enviado com sucesso');
+               setTimeout(function(){ 
+                var msg = document.getElementById("msg");
+                msg.parentNode.removeChild(msg);   
+            },3000);
+            },
+          });
+      });
+    });
+
+</script>
 
   
 
