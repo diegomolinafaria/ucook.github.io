@@ -254,7 +254,7 @@ section.box2{
 }
 
 .smartphone{
-background: url('../images/iphone.png');
+background: url('../images/mockup-ucook.png');
 width: 350px;
 height: 500px;
 transform: skewY(4deg);
@@ -272,6 +272,7 @@ margin-top: -5vh;
   height: 40px;
   transform: skewY(4deg);
   cursor: pointer;
+  display: none;
 }
 
 .playstore{
@@ -804,10 +805,12 @@ footer span{
 
 div.playstore{
   padding-left: 20px;
+  display: none;
 }
 div.appstore{
   padding-top: 11px;
   padding-left: 10px;
+  display: none;
 }
 
   div.services{
